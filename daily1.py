@@ -3,14 +3,14 @@
 #Data Structures
 #List - ordered collection of items, mutable(changeable) : [square ]
 list1 = [1,2,3,4,5,'a','Dhiraj',"Upadhyaya",True]  #list type of object with data
-list1  #print when through spyder
+list1  #prinp.matrix([[h, jbn, b, b],
 type(list1)  #type of object
 print(list1)  #print when running complete file
 list1
 sorted([100000,5,3,2,4,5,324,43,4,4,3,23,434,53442,244,2245224,523])
-list2 = ['f','c','d','e',"f"]
+list2 = ['f','c','d','e',"f",'g','a','k','x','w','l']
 list2
-list2.count('f')
+list2.count('z')
 list2.count('d')
 len(list2)
 dir(list)
@@ -27,8 +27,8 @@ tuple1 = (1, 2, 'a', 'b')
 tuple1
 type(tuple1)
 tuple1[1]
-tuple1[1] = 0  #changes not possible, immutable
-tuple1 = (5,45)
+tuple1[5] = 10  #changes not possible, immutable
+tuple1 = (5,45,1,10,89,57,2,a,m)
 tuple1  #overwriting is possible
 #%%
 #Dictionary - key-value pairs : { curly bracket and colon key:value}
@@ -116,7 +116,7 @@ list1
 for i in list1:
     print(i)
 
-  
+  print
 for i in list1:    print(i , end ='\t')
 #print?  #help
 for i in list2:    print(i, 'DU' , sep='-' , end ='xxx')
@@ -174,7 +174,7 @@ np
 np.mean(np.arange(1,10000000))
 np1
 type(np1)
-help(np)
+help(np.arrange)
 #help on numpy 
 dir(np)  #functions available in numpy
 help(np.mean)  # help on mean function of numpy
@@ -209,13 +209,15 @@ import pandas as pd
 help(pd)
 dir(pd)
 
-df1 = pd.DataFrame({'rollno':[1,2,3,4], 'name': [ "Dhiraj", "Kounal", "Akhil", "Pooja" ], 'marks':[ 40, 50, 60.5, 70 ], 'gender':['M', 'M','M', 'F']})
+df1 = pd.DataFrame({'rollno':[1,2,3,4], 'name': [ "Dhiraj", "Kounal", "Akhil", "Pooja","Diya" ], 'marks':[ 40, 50, 60.5, 70,80 ], 'gender':['M', 'M','M', 'F','F']
+                                                                                                                        
 df1
 type(df1) 
 
 df1.columns  #colum nanes
 df1.index  #row ids/ names  - here auto created
-df1.describe() #description of numerical values
+df1.describe() #descrip
+df1.describe(include='all')
 df1.dtypes #data types
 df1.shape  # rows and columns
 df1.groupby('gender').size()
